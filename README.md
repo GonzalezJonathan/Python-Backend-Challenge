@@ -1,16 +1,33 @@
-Bienvenidos a mi repositorio!
+# Bienvenido al Repositorio de Resolución de Challenges para InceptIA
 
-Aquí resolví el challenge que me han propuesto.
+¡Hola! Gracias por visitar mi repositorio donde resolví el challenge propuesto por InceptIA. Aquí encontrarás la solución a los desafíos planteados y las instrucciones para ejecutar el código.
 
-Antes de ejectutar el código de los archivos hay que tener en cuenta 2 cosas:
-1. Instalar la librería requests de python -> "pip install requests".
-2. Instalar la librería pandas de python -> "pip install pandas".
+## Antes de Comenzar
 
-Luego de eso ya podrán ejecutar cada uno de los archivos para obtener la resolución.
+Antes de ejecutar los archivos, asegúrate de seguir estos pasos:
 
-Explicación de la solución del Ejercicio 2.2
-En este la solución que pensé para evitar obtener un potencial loop infino fue la de, encaso de que el cliente ingrese un sabor de helado que no tenga nada de stock,
-le retorno todos los sabes que no tienen stock, esto con la idea de evitar que siga eligiendo sabores los cuales no se tenga stock.
-Por otro lado existía la posibilidad de que el cliente eligiera un sabor donde si tuvieramos stock pero no la cantidad que el desee, en ese caso se le retorna un mensaje
-diciendole la cantidad de stock que tenemos de ese sabor.
-Con esas 2  mejoras a la función anterior, tenemos la solución a un eventual loop infinito.
+1. Instala la librería `requests` de Python ejecutando el siguiente comando:
+   ```bash
+   pip install requests
+   ```
+
+2. Instala la librería `pandas` de Python con el siguiente comando:
+   ```bash
+   pip install pandas
+   ```
+
+Estas bibliotecas son esenciales para el correcto funcionamiento de los archivos.
+
+## Ejecución de los Archivos
+
+Una vez que hayas instalado las librerías necesarias, puedes ejecutar cada uno de los archivos para obtener la resolución de los desafíos.
+
+## Explicación de la Solución del Ejercicio 2.2
+
+En el ejercicio 2.2, abordé la problemática de posibles bucles infinitos. Para evitar situaciones en las que el cliente elige sabores de helado sin stock, he implementado una mejora en la función. Ahora, si el cliente selecciona un sabor sin stock, se le mostrará una lista de todos los sabores agotados, evitando así que continúe eligiendo opciones no disponibles.
+
+Además, he considerado otra situación en la que el cliente elige un sabor con stock limitado. En este caso, la función devuelve un mensaje informando al cliente sobre la cantidad disponible de ese sabor específico. Con estas dos mejoras, se garantiza una solución efectiva para evitar bucles infinitos y proporcionar información clara al cliente.
+
+## Agradecimientos
+
+¡Gracias por revisar mi trabajo y considerar mi aplicación para el puesto de Python Developer en InceptIA!
